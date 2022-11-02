@@ -3,15 +3,19 @@
   Return the number of even numbers up to "a".
 */
 int func(int a) {
+  int i = 0;
   int b = 0;
-
-  while (b + 4 < a) {
-    b += 2;
-    print(b);
+  while (i < a) {
+    i++;
+    while (i % 2 == 0) {
+      i++;
+      b += 1;
+    }
   }
-  return b +2;
+
+  return b;
 }
 
 void main() {
-  print(func(12));
+  print(func(14));
 }
