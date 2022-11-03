@@ -5,7 +5,7 @@
 int func(int a) {
   int i = 0;
   int b = 0;
-  while (i < a) {
+  while (i <= a) {
     i++;
     while (i % 2 == 0) {
       i++;
