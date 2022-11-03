@@ -6,4 +6,13 @@
   
   
 */
-void main() {}
+String func(int a) {
+  if (a % 2 == 0 || a % 3 == 0 || a % 5 == 0 || a+1 % 7 == 0) {
+    return "tub son emas";
+  }
+  return "tub son";
+}
+
+void main() {
+  print(func(13));
+}
