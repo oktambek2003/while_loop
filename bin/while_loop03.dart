@@ -5,18 +5,16 @@
 int func(int a) {
   int i = 0;
   int b = 0;
-  while (i + 1 < a) {
-    i++;
-    while (i % 2 == 1) {
-      i += 1;
-      b += 1;
-      print(i);
-    }
+  while (i <= a) {
+    if (i % 2 == 1) {
+      b+=i;
+    } 
+    i += 1;
   }
 
   return b;
 }
 
 void main() {
-  print(func(5));
+  print(func(15));
 }
